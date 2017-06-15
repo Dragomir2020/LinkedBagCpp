@@ -1,9 +1,9 @@
 //  Created by Frank M. Carrano and Timothy M. Henry.
 //  Copyright (c) 2017 Pearson Education, Hoboken, New Jersey.
 
-///////////////////////////
-//FILE NAME: ArrayBag.cpp//
-///////////////////////////
+/////////////////////////////
+//FILE NAME: BagInterface.h//
+/////////////////////////////
 
 ////////////////
 //Contributers//
@@ -28,10 +28,13 @@
 
 #include <vector>
 using namespace std;
-
+// This class is an abstrac base class that linked back inherits from
 class BagInterface
 {
 public:
+    // These are considered pure virtual functions because they are set to = 0 and
+    // must be re-defined in the derived class
+    
    /** Gets the current number of entries in this bag.
     @return The integer number of entries currently in the bag. */
    virtual int getCurrentSize() const = 0;
