@@ -28,7 +28,7 @@
 
 #include <vector>
 using namespace std;
-// This class is an abstrac base class that linked back inherits from
+// This class is an abstract base class that LinkedBag inherits from
 class BagInterface
 {
 public:
